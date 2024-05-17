@@ -1,5 +1,5 @@
 ![](https://shonharsh.github.io/curriculum-vitae/images/banner-uipath.png)
-# //Project Pending - I am still updating all of the projects for the RPA Developer Foundation.  In doing so I am updating the existing C# Windows Legacy project while also rewriting them in both C# Windows and VB Windows.  I complete at least one project a day.
+
 # S07P03 Fix My Workflow
 
 This project is my solution in **C#** to the **Fix My Workflow** practice found in section 07 practice 03 of the UiPath - RPA Developer Foundation course.
@@ -10,9 +10,27 @@ After making a pull request or downloading the project, open the Main.xaml in Ui
 
 ### Practice Requirements
 
-###### **Title**
+###### **Problem statement : Get Movie Rating From IMDB website**
 
-Description
+A workflow received from a colleague isn't working as intended and needs to be fixed using the concepts and features discussed in the course.
+
+Download the workflow for Debugging.
+
+Descriptor_FIx my workflow.zip
+2.3 MB
+The provided workflow needs to be fixed to perform the following tasks:
+
+Search for the movie "The Ice Age" on the IMDb website.
+Retrieve the IMDb rating of the movie.
+Display the IMDb rating through a messagebox.
+
+**Notes:** The practice source file is located in
+ Data\Sample Data\Descriptor_FIxMyWorkflow.zip.
+ Since the source Fix My Workflow content was in VB.Net, it cannot be directly
+ used in this C# project.  As such this is a mapping of the instructions to
+ obtain the same result.
+
+ Also, I chose to refactor the process so it will lookup multiple titles.
 
 ### Details
 
@@ -28,8 +46,21 @@ Description
 
 ### Sample Output
 
-```
-
+```sh
+05/16/2024 15:51:04 => [Info] RPADev-S07P03-FixMyWorkflow execution started
+05/16/2024 15:51:04 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Begin;
+05/16/2024 15:51:11 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: Dune, Rating: 8.0, Popularity: 45
+05/16/2024 15:51:15 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: I Am Legend, Rating: 7.2, Popularity: 1,251
+05/16/2024 15:51:19 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: Kims Convenience, Rating: 8.2, Popularity: 1,207
+05/16/2024 15:51:24 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: S.W.A.T, Rating: 7.2, Popularity: 69
+05/16/2024 15:51:29 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: Serenity, Rating: 7.8, Popularity: 1,027
+05/16/2024 15:51:33 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: The Bourne Identity, Rating: 7.8, Popularity: 944
+05/16/2024 15:51:38 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: The Fifth Element, Rating: 7.6, Popularity: 238
+05/16/2024 15:51:46 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: The Lord Of The Rings: The Fellowship Of The Ring, Rating: 8.9, Popularity: 90
+05/16/2024 15:51:51 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: The Martian, Rating: 8.0, Popularity: 453
+05/16/2024 15:51:57 => [Info] RPADev-S07P03-FixMyWorkflow.Main.Result; Title: The Matrix, Rating: 8.7, Popularity: 130
+05/16/2024 15:51:57 => [Info] RPADev-S07P03-FixMyWorkflow.Main.End;
+05/16/2024 15:51:57 => [Info] RPADev-S07P03-FixMyWorkflow execution ended in: 00:00:53
 ```
 
 ### Architecture Requirements
@@ -42,11 +73,13 @@ A standard UiPath, Studio to Orchestrator cloud setup is the base of operation. 
 
 Clone the project to develop or change it.
 
-`git clone https://github.com/ShonHarsh/RPADev-S07P03-FixMyWorkflow`
+```sh
+git clone https://github.com/ShonHarsh/RPADev-S07P03-FixMyWorkflow
+```
 
 ### Links
 - [UiPath Automation Platform](https://www.uipath.com/)
-- [UiPath Studio](https://www.uipath.com/product/studio)
+- [UiPath Studio](https://www.uipath.com/product/studio)- [Atom Editor (Used for all my Readme files)](https://atom-editor.cc/)
 - [Shon Harsh Website 127.0.0.1](https://shonharsh.github.io/curriculum-vitae/index.html)
 - [This.GitHub](https://github.com/shonharsh)
 - [LinkedIn](https://www.linkedin.com/in/shonharsh/)
